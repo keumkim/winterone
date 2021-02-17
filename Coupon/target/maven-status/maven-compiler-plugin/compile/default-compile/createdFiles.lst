@@ -1,0 +1,12 @@
+winterschoolone/CouponRepository.class
+winterschoolone/PolicyHandler.class
+winterschoolone/CouponController.class
+winterschoolone/Payed.class
+winterschoolone/Used.class
+winterschoolone/Coupon.class
+winterschoolone/CouponApplication.class
+winterschoolone/AbstractEvent$1.class
+winterschoolone/Issued.class
+winterschoolone/Assigned.class
+winterschoolone/AbstractEvent.class
+winterschoolone/config/kafka/KafkaProcessor.class
