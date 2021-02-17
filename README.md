@@ -360,6 +360,10 @@ mvn package
 cd ..
 cd sirenorderhome
 mvn package
+
+cd ..
+cd coupon
+mvn package
 ```
 
 - Docker Image Push/deploy/서비스생성
@@ -391,6 +395,13 @@ az acr build --registry skteam01 --image skteam01.azurecr.io/sirenorderhome:v1 .
 
 kubectl create deploy sirenorderhome --image=skteam01.azurecr.io/sirenorderhome:v1 -n tutorial
 kubectl expose deploy sirenorderhome --type=ClusterIP --port=8080 -n tutorial
+
+cd ..
+cd coupon
+az acr build --registry skteam01 --image skteam01.azurecr.io/coupon:v1 .
+
+kubectl create deploy shop --image=skteam01.azurecr.io/coupon:v1 -n tutorial
+kubectl expose deploy shop --type=ClusterIP --port=8080 -n tutorial
 ```
 
 - yml파일 이용한 deploy
